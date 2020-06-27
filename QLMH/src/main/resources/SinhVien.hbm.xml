@@ -4,13 +4,10 @@
 <!-- Generated Jun 27, 2020, 9:53:27 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.hibernate.entities.SinhVien" table="SINHVIEN">
-        <id name="id" type="java.lang.Long">
-            <column name="ID" />
+        <id name="MSSV" type="java.lang.String">
+            <column name="MSSV" />
             <generator class="assigned" />
         </id>
-        <property name="MSSV" type="java.lang.String">
-            <column name="MSSV" />
-        </property>
         <property name="HoTen" type="java.lang.String">
             <column name="HOTEN" />
         </property>
