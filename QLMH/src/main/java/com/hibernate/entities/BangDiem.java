@@ -5,30 +5,16 @@ import java.io.Serializable;
 public class BangDiem implements Serializable
 {
 	private static final long serialVersionUID = 1L;
-	private String MaLop;
-	private String MaMon;
-	private String MSSV;
+	private IDBangDiem idBangDiem;
 	private double DiemGK;
 	private double DiemCK;
 	private double DiemKhac;
 	private double DiemTong;
-	public String getMaLop() {
-		return MaLop;
+	public IDBangDiem getIdBangDiem() {
+		return idBangDiem;
 	}
-	public void setMaLop(String maLop) {
-		MaLop = maLop;
-	}
-	public String getMaMon() {
-		return MaMon;
-	}
-	public void setMaMon(String maMon) {
-		MaMon = maMon;
-	}
-	public String getMSSV() {
-		return MSSV;
-	}
-	public void setMSSV(String mSSV) {
-		MSSV = mSSV;
+	public void setIdBangDiem(IDBangDiem idBangDiem) {
+		this.idBangDiem = idBangDiem;
 	}
 	public double getDiemGK() {
 		return DiemGK;
