@@ -5,20 +5,13 @@ import java.io.Serializable;
 public class KhoaHoc implements Serializable
 {
 	private static final long serialVersionUID = 1L;
-	private String MaLop;
-	private String MaMon;
+	private IDKhoaHoc idKhoaHoc;
 	private String MSSV;
-	public String getMaLop() {
-		return MaLop;
+	public IDKhoaHoc getIdKhoaHoc() {
+		return idKhoaHoc;
 	}
-	public void setMaLop(String maLop) {
-		MaLop = maLop;
-	}
-	public String getMaMon() {
-		return MaMon;
-	}
-	public void setMaMon(String maMon) {
-		MaMon = maMon;
+	public void setIdKhoaHoc(IDKhoaHoc idKhoaHoc) {
+		this.idKhoaHoc = idKhoaHoc;
 	}
 	public String getMSSV() {
 		return MSSV;
@@ -26,5 +19,6 @@ public class KhoaHoc implements Serializable
 	public void setMSSV(String mSSV) {
 		MSSV = mSSV;
 	}
+	
 	
 }
