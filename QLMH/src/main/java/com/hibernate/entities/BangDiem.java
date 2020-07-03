@@ -40,5 +40,13 @@ public class BangDiem implements Serializable
 	public void setDiemTong(double diemTong) {
 		DiemTong = diemTong;
 	}
+	public BangDiem(IDBangDiem idBangDiem, double diemGK, double diemCK, double diemKhac, double diemTong) {
+		super();
+		this.idBangDiem = idBangDiem;
+		DiemGK = diemGK;
+		DiemCK = diemCK;
+		DiemKhac = diemKhac;
+		DiemTong = diemTong;
+	}
 	
 }

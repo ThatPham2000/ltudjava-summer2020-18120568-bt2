@@ -19,6 +19,11 @@ public class KhoaHoc implements Serializable
 	public void setMSSV(String mSSV) {
 		MSSV = mSSV;
 	}
+	public KhoaHoc(IDKhoaHoc idKhoaHoc, String mSSV) {
+		super();
+		this.idKhoaHoc = idKhoaHoc;
+		MSSV = mSSV;
+	}
 	
 	
 }

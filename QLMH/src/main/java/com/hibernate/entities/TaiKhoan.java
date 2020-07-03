@@ -19,5 +19,10 @@ public class TaiKhoan implements Serializable
 	public void setPassword(String password) {
 		Password = password;
 	}
+	public TaiKhoan(String username, String password) {
+		super();
+		Username = username;
+		Password = password;
+	}
 	
 }

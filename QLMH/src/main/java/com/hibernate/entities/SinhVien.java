@@ -42,6 +42,14 @@ public class SinhVien implements Serializable
 	public void setMaLop(String maLop) {
 		MaLop = maLop;
 	}
+	public SinhVien(String mSSV, String hoTen, String gioiTinh, String cMND, String maLop) {
+		super();
+		MSSV = mSSV;
+		HoTen = hoTen;
+		GioiTinh = gioiTinh;
+		CMND = cMND;
+		MaLop = maLop;
+	}
 	
 	
 }

@@ -26,5 +26,11 @@ public class TKB implements Serializable
 	public void setPhongHoc(String phongHoc) {
 		PhongHoc = phongHoc;
 	}
+	public TKB(String maMon, String tenMon, String phongHoc) {
+		super();
+		MaMon = maMon;
+		TenMon = tenMon;
+		PhongHoc = phongHoc;
+	}
 	
 }

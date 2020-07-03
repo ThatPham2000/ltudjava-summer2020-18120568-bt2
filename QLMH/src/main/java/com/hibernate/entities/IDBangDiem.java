@@ -26,5 +26,11 @@ public class IDBangDiem implements Serializable
 	public void setMSSV(String mSSV) {
 		MSSV = mSSV;
 	}
+	public IDBangDiem(String maLop, String maMon, String mSSV) {
+		super();
+		MaLop = maLop;
+		MaMon = maMon;
+		MSSV = mSSV;
+	}
 	
 }

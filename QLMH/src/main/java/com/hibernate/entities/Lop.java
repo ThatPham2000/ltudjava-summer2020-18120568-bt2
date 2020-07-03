@@ -12,5 +12,9 @@ public class Lop implements Serializable
 	public void setMalop(String malop) {
 		Malop = malop;
 	}
+	public Lop(String malop) {
+		super();
+		Malop = malop;
+	}
 	
 }

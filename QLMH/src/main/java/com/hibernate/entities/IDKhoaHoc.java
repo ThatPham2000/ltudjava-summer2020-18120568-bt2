@@ -19,5 +19,10 @@ public class IDKhoaHoc implements Serializable
 	public void setMaMon(String maMon) {
 		MaMon = maMon;
 	}
+	public IDKhoaHoc(String maLop, String maMon) {
+		super();
+		MaLop = maLop;
+		MaMon = maMon;
+	}
 	
 }
