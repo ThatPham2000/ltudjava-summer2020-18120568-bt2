@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hibernate.TkbEntity" table="TKB" schema="DB_QLMH">
+        <id name="maMon">
+            <column name="MaMon" sql-type="char(10)" length="10"/>
+        </id>
+        <property name="tenMon">
+            <column name="TenMon" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="phongHoc">
+            <column name="PhongHoc" sql-type="char(10)" length="10" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

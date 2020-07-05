@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 5, 2020, 5:23:19 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="hibernate.BangDiemEntity" table="BANGDIEM">
+        <id name="maLop" type="java.lang.String">
+            <column name="MALOP" />
+            <generator class="assigned" />
+        </id>
+        <property name="maMon" type="java.lang.String">
+            <column name="MAMON" />
+        </property>
+        <property name="mssv" type="java.lang.String">
+            <column name="MSSV" />
+        </property>
+        <property name="diemGk" type="java.math.BigDecimal">
+            <column name="DIEMGK" />
+        </property>
+        <property name="diemCk" type="java.math.BigDecimal">
+            <column name="DIEMCK" />
+        </property>
+        <property name="diemKhac" type="java.math.BigDecimal">
+            <column name="DIEMKHAC" />
+        </property>
+        <property name="diemTong" type="java.math.BigDecimal">
+            <column name="DIEMTONG" />
+        </property>
+    </class>
+</hibernate-mapping>

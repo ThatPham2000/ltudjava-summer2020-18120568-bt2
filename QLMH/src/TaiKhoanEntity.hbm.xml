@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hibernate.TaiKhoanEntity" table="TaiKhoan" schema="DB_QLMH">
+        <id name="username">
+            <column name="Username" sql-type="char(8)" length="8"/>
+        </id>
+        <property name="password">
+            <column name="Password" sql-type="char(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
