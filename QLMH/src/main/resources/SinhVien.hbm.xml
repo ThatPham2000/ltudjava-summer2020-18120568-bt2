@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 27, 2020, 9:53:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.hibernate.entities.SinhVien" table="SINHVIEN">
+		<id name="MSSV" type="java.lang.String">
+			<column name="MSSV" />
+			<generator class="assigned" />
+		</id>
+		<property name="HoTen" type="java.lang.String">
+			<column name="HOTEN" />
+		</property>
+		<property name="GioiTinh" type="java.lang.String">
+			<column name="GIOITINH" />
+		</property>
+		<property name="CMND" type="java.lang.String">
+			<column name="CMND" />
+		</property>
+		<many-to-one class="com.hibernate.entities.Lop" name="lop"
+			fetch="select" lazy="false" cascade="save-update, delete">
+			<column name="Malop" not-null="true"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

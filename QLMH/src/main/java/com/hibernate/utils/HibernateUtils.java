@@ -1,5 +1,10 @@
+package com.hibernate.utils;
 
-public class HibernateUtils {
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtils 
+{
 	public static SessionFactory getSessionFactory()
 	{
 		try {

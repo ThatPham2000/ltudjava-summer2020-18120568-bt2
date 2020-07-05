@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 27, 2020, 9:53:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.hibernate.entities.Lop" table="Lop">
+		<id name="MaLop" type="java.lang.String">
+			<column name="MaLop" />
+			<generator class="assigned" />
+		</id>
+		<set inverse="true" name="sinhVien">
+			<key>
+				<column name="MaLop"></column>
+			</key>
+			<one-to-many class="com.hibernate.entities.SinhVien"/>
+		</set>
+	</class>
+</hibernate-mapping>
